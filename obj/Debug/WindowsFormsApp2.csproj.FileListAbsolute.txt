@@ -16,3 +16,21 @@ D:\MediVortex\New folder\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Transaction
 D:\MediVortex\New folder\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.MasterData.resources
 D:\MediVortex\New folder\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Reports.resources
 D:\MediVortex\New folder\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Finance.resources
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\WindowsFormsApp2.exe.config
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\WindowsFormsApp2.exe
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\WindowsFormsApp2.pdb
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.Dashboard.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.Finance.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.Inventory.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.LoginForm.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.MasterData.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.Registration.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.Reports.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.Transactions.resources
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.exe
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.pdb

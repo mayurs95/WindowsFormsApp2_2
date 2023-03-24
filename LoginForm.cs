@@ -44,7 +44,7 @@ namespace WindowsFormsApp2
 
             // Create a connection object using the connection string.
             SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = @"Data Source=DESKTOP-34MFKGA;Initial Catalog=NeoVortex;Integrated Security=True";
+            connection.ConnectionString = @"Data Source=DESKTOP-R9V99R0;Initial Catalog=MediVortex;Integrated Security=True";
 
             try
             {
