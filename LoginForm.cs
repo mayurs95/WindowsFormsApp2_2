@@ -21,6 +21,8 @@ namespace WindowsFormsApp2
             //niche wala se login button ka color change function activate hota he
             btn_login.MouseEnter += btn_login_Enter;
             btn_login.MouseLeave += btn_login_Leave;
+            this.DoubleBuffered = true; // set the DoubleBuffered property to true
+            this.WindowState = FormWindowState.Maximized; // set the WindowState property to Maximized
 
         }
 

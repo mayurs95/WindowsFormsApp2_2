@@ -16,10 +16,12 @@ namespace WindowsFormsApp2
         public Dashboard()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized; // set the WindowState property to Maximized
+
         }
 
 
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {

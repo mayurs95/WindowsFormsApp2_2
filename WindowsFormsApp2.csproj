@@ -76,6 +76,11 @@
     <Compile Include="MasterData.Designer.cs">
       <DependentUpon>MasterData.cs</DependentUpon>
     </Compile>
+    <Compile Include="MediVortexDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MediVortexDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.cs">
@@ -129,6 +134,17 @@
     <EmbeddedResource Include="Transactions.resx">
       <DependentUpon>Transactions.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="MediVortexDataSet.xsc">
+      <DependentUpon>MediVortexDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MediVortexDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MediVortexDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MediVortexDataSet.xss">
+      <DependentUpon>MediVortexDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
