@@ -50,10 +50,28 @@
             this.CompanyName = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.Patient = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btn_reset = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.txt_doctor = new System.Windows.Forms.TextBox();
+            this.txtallergies = new System.Windows.Forms.TextBox();
+            this.txtemailaddress = new System.Windows.Forms.TextBox();
+            this.txtcontactnumber = new System.Windows.Forms.TextBox();
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.dtp_birthdate = new System.Windows.Forms.DateTimePicker();
+            this.txtpatientname = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.btn_Back_patient = new System.Windows.Forms.Button();
             this.Doctor = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.Vendor = new System.Windows.Forms.TabPage();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.MedicineStock = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -148,23 +166,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl_registration = new System.Windows.Forms.TabControl();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.txtpatientname = new System.Windows.Forms.TextBox();
-            this.dtp_birthdate = new System.Windows.Forms.DateTimePicker();
-            this.txt_address = new System.Windows.Forms.TextBox();
-            this.txtcontactnumber = new System.Windows.Forms.TextBox();
-            this.txtemailaddress = new System.Windows.Forms.TextBox();
-            this.txtallergies = new System.Windows.Forms.TextBox();
-            this.txt_doctor = new System.Windows.Forms.TextBox();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.btn_reset = new System.Windows.Forms.Button();
+            this.label49 = new System.Windows.Forms.Label();
+            this.txtBusinessOwner = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.txtBusinessName = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.txtContactNum = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.txtEmailId = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.txtWholesalerAddress = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.txtWholesalerPanNumber = new System.Windows.Forms.TextBox();
+            this.txtWholesalerGstin = new System.Windows.Forms.TextBox();
+            this.btn_save_wholesaler = new System.Windows.Forms.Button();
+            this.btn_wholesaler_clear = new System.Windows.Forms.Button();
+            this.btn_wholesaler_back = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.Content.SuspendLayout();
@@ -172,15 +190,16 @@
             this.Hospital.SuspendLayout();
             this.CompanyName.SuspendLayout();
             this.Patient.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.Doctor.SuspendLayout();
             this.Vendor.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.MedicineStock.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl_registration.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -386,6 +405,162 @@
             this.Patient.Text = "Patient";
             this.Patient.UseVisualStyleBackColor = true;
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btn_reset);
+            this.panel6.Controls.Add(this.btn_save);
+            this.panel6.Controls.Add(this.txt_doctor);
+            this.panel6.Controls.Add(this.txtallergies);
+            this.panel6.Controls.Add(this.txtemailaddress);
+            this.panel6.Controls.Add(this.txtcontactnumber);
+            this.panel6.Controls.Add(this.txt_address);
+            this.panel6.Controls.Add(this.dtp_birthdate);
+            this.panel6.Controls.Add(this.txtpatientname);
+            this.panel6.Controls.Add(this.label48);
+            this.panel6.Controls.Add(this.label47);
+            this.panel6.Controls.Add(this.label46);
+            this.panel6.Controls.Add(this.label45);
+            this.panel6.Controls.Add(this.label44);
+            this.panel6.Controls.Add(this.label43);
+            this.panel6.Controls.Add(this.label42);
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1087, 597);
+            this.panel6.TabIndex = 7;
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.Location = new System.Drawing.Point(350, 458);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(221, 23);
+            this.btn_reset.TabIndex = 29;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
+            // btn_save
+            // 
+            this.btn_save.Location = new System.Drawing.Point(123, 458);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(221, 23);
+            this.btn_save.TabIndex = 28;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // txt_doctor
+            // 
+            this.txt_doctor.Location = new System.Drawing.Point(123, 363);
+            this.txt_doctor.Name = "txt_doctor";
+            this.txt_doctor.Size = new System.Drawing.Size(448, 20);
+            this.txt_doctor.TabIndex = 27;
+            // 
+            // txtallergies
+            // 
+            this.txtallergies.Location = new System.Drawing.Point(123, 326);
+            this.txtallergies.Name = "txtallergies";
+            this.txtallergies.Size = new System.Drawing.Size(448, 20);
+            this.txtallergies.TabIndex = 26;
+            // 
+            // txtemailaddress
+            // 
+            this.txtemailaddress.Location = new System.Drawing.Point(123, 290);
+            this.txtemailaddress.Name = "txtemailaddress";
+            this.txtemailaddress.Size = new System.Drawing.Size(448, 20);
+            this.txtemailaddress.TabIndex = 25;
+            // 
+            // txtcontactnumber
+            // 
+            this.txtcontactnumber.Location = new System.Drawing.Point(123, 257);
+            this.txtcontactnumber.Name = "txtcontactnumber";
+            this.txtcontactnumber.Size = new System.Drawing.Size(448, 20);
+            this.txtcontactnumber.TabIndex = 24;
+            // 
+            // txt_address
+            // 
+            this.txt_address.Location = new System.Drawing.Point(123, 112);
+            this.txt_address.Multiline = true;
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(448, 126);
+            this.txt_address.TabIndex = 23;
+            // 
+            // dtp_birthdate
+            // 
+            this.dtp_birthdate.Location = new System.Drawing.Point(123, 79);
+            this.dtp_birthdate.Name = "dtp_birthdate";
+            this.dtp_birthdate.Size = new System.Drawing.Size(200, 20);
+            this.dtp_birthdate.TabIndex = 22;
+            // 
+            // txtpatientname
+            // 
+            this.txtpatientname.Location = new System.Drawing.Point(123, 41);
+            this.txtpatientname.Name = "txtpatientname";
+            this.txtpatientname.Size = new System.Drawing.Size(448, 20);
+            this.txtpatientname.TabIndex = 21;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(20, 366);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(45, 13);
+            this.label48.TabIndex = 20;
+            this.label48.Text = "Doctor :";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(20, 329);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(52, 13);
+            this.label47.TabIndex = 19;
+            this.label47.Text = "Allergies :";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(20, 293);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(79, 13);
+            this.label46.TabIndex = 18;
+            this.label46.Text = "Email Address :";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(20, 260);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(90, 13);
+            this.label45.TabIndex = 17;
+            this.label45.Text = "Contact Number :";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(20, 115);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(51, 13);
+            this.label44.TabIndex = 16;
+            this.label44.Text = "Address :";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(20, 79);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(55, 13);
+            this.label43.TabIndex = 15;
+            this.label43.Text = "Birthdate :";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(20, 44);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(77, 13);
+            this.label42.TabIndex = 14;
+            this.label42.Text = "Patient Name :";
+            // 
             // btn_Back_patient
             // 
             this.btn_Back_patient.Location = new System.Drawing.Point(1267, 3);
@@ -418,14 +593,40 @@
             // 
             // Vendor
             // 
+            this.Vendor.Controls.Add(this.panel8);
             this.Vendor.Controls.Add(this.button1);
             this.Vendor.Location = new System.Drawing.Point(4, 22);
             this.Vendor.Name = "Vendor";
             this.Vendor.Padding = new System.Windows.Forms.Padding(3);
             this.Vendor.Size = new System.Drawing.Size(1366, 600);
             this.Vendor.TabIndex = 1;
-            this.Vendor.Text = "Vendor";
+            this.Vendor.Text = "Wholesaler";
             this.Vendor.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel8.Controls.Add(this.btn_wholesaler_back);
+            this.panel8.Controls.Add(this.btn_wholesaler_clear);
+            this.panel8.Controls.Add(this.btn_save_wholesaler);
+            this.panel8.Controls.Add(this.txtWholesalerGstin);
+            this.panel8.Controls.Add(this.txtWholesalerPanNumber);
+            this.panel8.Controls.Add(this.label51);
+            this.panel8.Controls.Add(this.label50);
+            this.panel8.Controls.Add(this.txtWholesalerAddress);
+            this.panel8.Controls.Add(this.label55);
+            this.panel8.Controls.Add(this.txtEmailId);
+            this.panel8.Controls.Add(this.label54);
+            this.panel8.Controls.Add(this.txtContactNum);
+            this.panel8.Controls.Add(this.label53);
+            this.panel8.Controls.Add(this.txtBusinessName);
+            this.panel8.Controls.Add(this.label52);
+            this.panel8.Controls.Add(this.txtBusinessOwner);
+            this.panel8.Controls.Add(this.label49);
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1366, 604);
+            this.panel8.TabIndex = 8;
             // 
             // button1
             // 
@@ -1336,161 +1537,167 @@
             this.tabControl_registration.Size = new System.Drawing.Size(1374, 626);
             this.tabControl_registration.TabIndex = 14;
             // 
-            // panel6
+            // label49
             // 
-            this.panel6.Controls.Add(this.btn_reset);
-            this.panel6.Controls.Add(this.btn_save);
-            this.panel6.Controls.Add(this.txt_doctor);
-            this.panel6.Controls.Add(this.txtallergies);
-            this.panel6.Controls.Add(this.txtemailaddress);
-            this.panel6.Controls.Add(this.txtcontactnumber);
-            this.panel6.Controls.Add(this.txt_address);
-            this.panel6.Controls.Add(this.dtp_birthdate);
-            this.panel6.Controls.Add(this.txtpatientname);
-            this.panel6.Controls.Add(this.label48);
-            this.panel6.Controls.Add(this.label47);
-            this.panel6.Controls.Add(this.label46);
-            this.panel6.Controls.Add(this.label45);
-            this.panel6.Controls.Add(this.label44);
-            this.panel6.Controls.Add(this.label43);
-            this.panel6.Controls.Add(this.label42);
-            this.panel6.Location = new System.Drawing.Point(3, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1087, 597);
-            this.panel6.TabIndex = 7;
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(9, 74);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(128, 21);
+            this.label49.TabIndex = 0;
+            this.label49.Text = "Business Owner :";
             // 
-            // label48
+            // txtBusinessOwner
             // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(20, 366);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(45, 13);
-            this.label48.TabIndex = 20;
-            this.label48.Text = "Doctor :";
+            this.txtBusinessOwner.Location = new System.Drawing.Point(138, 75);
+            this.txtBusinessOwner.Name = "txtBusinessOwner";
+            this.txtBusinessOwner.Size = new System.Drawing.Size(403, 20);
+            this.txtBusinessOwner.TabIndex = 1;
             // 
-            // label47
+            // label52
             // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(20, 329);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(52, 13);
-            this.label47.TabIndex = 19;
-            this.label47.Text = "Allergies :";
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(9, 134);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(123, 21);
+            this.label52.TabIndex = 5;
+            this.label52.Text = "Business Name :";
             // 
-            // label46
+            // txtBusinessName
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(20, 293);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(79, 13);
-            this.label46.TabIndex = 18;
-            this.label46.Text = "Email Address :";
+            this.txtBusinessName.Location = new System.Drawing.Point(138, 134);
+            this.txtBusinessName.Name = "txtBusinessName";
+            this.txtBusinessName.Size = new System.Drawing.Size(403, 20);
+            this.txtBusinessName.TabIndex = 6;
             // 
-            // label45
+            // label53
             // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(20, 260);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(90, 13);
-            this.label45.TabIndex = 17;
-            this.label45.Text = "Contact Number :";
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(9, 194);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(132, 21);
+            this.label53.TabIndex = 7;
+            this.label53.Text = "Contact Number :";
             // 
-            // label44
+            // txtContactNum
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(20, 115);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(51, 13);
-            this.label44.TabIndex = 16;
-            this.label44.Text = "Address :";
+            this.txtContactNum.Location = new System.Drawing.Point(138, 194);
+            this.txtContactNum.Name = "txtContactNum";
+            this.txtContactNum.Size = new System.Drawing.Size(403, 20);
+            this.txtContactNum.TabIndex = 8;
             // 
-            // label43
+            // label54
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(20, 79);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(55, 13);
-            this.label43.TabIndex = 15;
-            this.label43.Text = "Birthdate :";
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(9, 244);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(72, 21);
+            this.label54.TabIndex = 9;
+            this.label54.Text = "Email Id :";
             // 
-            // label42
+            // txtEmailId
             // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(20, 44);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(77, 13);
-            this.label42.TabIndex = 14;
-            this.label42.Text = "Patient Name :";
+            this.txtEmailId.Location = new System.Drawing.Point(138, 244);
+            this.txtEmailId.Name = "txtEmailId";
+            this.txtEmailId.Size = new System.Drawing.Size(403, 20);
+            this.txtEmailId.TabIndex = 10;
             // 
-            // txtpatientname
+            // label55
             // 
-            this.txtpatientname.Location = new System.Drawing.Point(123, 41);
-            this.txtpatientname.Name = "txtpatientname";
-            this.txtpatientname.Size = new System.Drawing.Size(448, 20);
-            this.txtpatientname.TabIndex = 21;
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(9, 303);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(73, 21);
+            this.label55.TabIndex = 11;
+            this.label55.Text = "Address :";
             // 
-            // dtp_birthdate
+            // txtWholesalerAddress
             // 
-            this.dtp_birthdate.Location = new System.Drawing.Point(123, 79);
-            this.dtp_birthdate.Name = "dtp_birthdate";
-            this.dtp_birthdate.Size = new System.Drawing.Size(200, 20);
-            this.dtp_birthdate.TabIndex = 22;
+            this.txtWholesalerAddress.Location = new System.Drawing.Point(138, 303);
+            this.txtWholesalerAddress.Multiline = true;
+            this.txtWholesalerAddress.Name = "txtWholesalerAddress";
+            this.txtWholesalerAddress.Size = new System.Drawing.Size(403, 131);
+            this.txtWholesalerAddress.TabIndex = 12;
             // 
-            // txt_address
+            // label50
             // 
-            this.txt_address.Location = new System.Drawing.Point(123, 112);
-            this.txt_address.Multiline = true;
-            this.txt_address.Name = "txt_address";
-            this.txt_address.Size = new System.Drawing.Size(448, 126);
-            this.txt_address.TabIndex = 23;
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(569, 75);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(105, 21);
+            this.label50.TabIndex = 13;
+            this.label50.Text = "Pan Number :";
             // 
-            // txtcontactnumber
+            // label51
             // 
-            this.txtcontactnumber.Location = new System.Drawing.Point(123, 257);
-            this.txtcontactnumber.Name = "txtcontactnumber";
-            this.txtcontactnumber.Size = new System.Drawing.Size(448, 20);
-            this.txtcontactnumber.TabIndex = 24;
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(569, 134);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(61, 21);
+            this.label51.TabIndex = 14;
+            this.label51.Text = "GSTIN :";
             // 
-            // txtemailaddress
+            // txtWholesalerPanNumber
             // 
-            this.txtemailaddress.Location = new System.Drawing.Point(123, 290);
-            this.txtemailaddress.Name = "txtemailaddress";
-            this.txtemailaddress.Size = new System.Drawing.Size(448, 20);
-            this.txtemailaddress.TabIndex = 25;
+            this.txtWholesalerPanNumber.Location = new System.Drawing.Point(680, 76);
+            this.txtWholesalerPanNumber.Name = "txtWholesalerPanNumber";
+            this.txtWholesalerPanNumber.Size = new System.Drawing.Size(403, 20);
+            this.txtWholesalerPanNumber.TabIndex = 15;
             // 
-            // txtallergies
+            // txtWholesalerGstin
             // 
-            this.txtallergies.Location = new System.Drawing.Point(123, 326);
-            this.txtallergies.Name = "txtallergies";
-            this.txtallergies.Size = new System.Drawing.Size(448, 20);
-            this.txtallergies.TabIndex = 26;
+            this.txtWholesalerGstin.Location = new System.Drawing.Point(680, 134);
+            this.txtWholesalerGstin.Name = "txtWholesalerGstin";
+            this.txtWholesalerGstin.Size = new System.Drawing.Size(403, 20);
+            this.txtWholesalerGstin.TabIndex = 16;
             // 
-            // txt_doctor
+            // btn_save_wholesaler
             // 
-            this.txt_doctor.Location = new System.Drawing.Point(123, 363);
-            this.txt_doctor.Name = "txt_doctor";
-            this.txt_doctor.Size = new System.Drawing.Size(448, 20);
-            this.txt_doctor.TabIndex = 27;
+            this.btn_save_wholesaler.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_save_wholesaler.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_save_wholesaler.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save_wholesaler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_save_wholesaler.Location = new System.Drawing.Point(848, 358);
+            this.btn_save_wholesaler.Name = "btn_save_wholesaler";
+            this.btn_save_wholesaler.Size = new System.Drawing.Size(301, 27);
+            this.btn_save_wholesaler.TabIndex = 17;
+            this.btn_save_wholesaler.Text = "Save ";
+            this.btn_save_wholesaler.UseVisualStyleBackColor = false;
+            this.btn_save_wholesaler.Click += new System.EventHandler(this.btn_save_wholesaler_Click);
             // 
-            // btn_save
+            // btn_wholesaler_clear
             // 
-            this.btn_save.Location = new System.Drawing.Point(123, 458);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(221, 23);
-            this.btn_save.TabIndex = 28;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseVisualStyleBackColor = true;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            this.btn_wholesaler_clear.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_wholesaler_clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_wholesaler_clear.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_wholesaler_clear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_wholesaler_clear.Location = new System.Drawing.Point(848, 411);
+            this.btn_wholesaler_clear.Name = "btn_wholesaler_clear";
+            this.btn_wholesaler_clear.Size = new System.Drawing.Size(142, 27);
+            this.btn_wholesaler_clear.TabIndex = 18;
+            this.btn_wholesaler_clear.Text = "Clear";
+            this.btn_wholesaler_clear.UseVisualStyleBackColor = false;
+            this.btn_wholesaler_clear.Click += new System.EventHandler(this.btn_wholesaler_clear_Click);
             // 
-            // btn_reset
+            // btn_wholesaler_back
             // 
-            this.btn_reset.Location = new System.Drawing.Point(350, 458);
-            this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(221, 23);
-            this.btn_reset.TabIndex = 29;
-            this.btn_reset.Text = "Reset";
-            this.btn_reset.UseVisualStyleBackColor = true;
-            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            this.btn_wholesaler_back.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_wholesaler_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_wholesaler_back.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_wholesaler_back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_wholesaler_back.Location = new System.Drawing.Point(1007, 411);
+            this.btn_wholesaler_back.Name = "btn_wholesaler_back";
+            this.btn_wholesaler_back.Size = new System.Drawing.Size(142, 27);
+            this.btn_wholesaler_back.TabIndex = 19;
+            this.btn_wholesaler_back.Text = "Back";
+            this.btn_wholesaler_back.UseVisualStyleBackColor = false;
+            this.btn_wholesaler_back.Click += new System.EventHandler(this.btn_wholesaler_back_Click);
             // 
             // Registration
             // 
@@ -1512,8 +1719,12 @@
             this.Hospital.ResumeLayout(false);
             this.CompanyName.ResumeLayout(false);
             this.Patient.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.Doctor.ResumeLayout(false);
             this.Vendor.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.MedicineStock.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -1524,8 +1735,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl_registration.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1670,5 +1879,23 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btn_wholesaler_back;
+        private System.Windows.Forms.Button btn_wholesaler_clear;
+        private System.Windows.Forms.Button btn_save_wholesaler;
+        private System.Windows.Forms.TextBox txtWholesalerGstin;
+        private System.Windows.Forms.TextBox txtWholesalerPanNumber;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox txtWholesalerAddress;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.TextBox txtEmailId;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TextBox txtContactNum;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.TextBox txtBusinessName;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TextBox txtBusinessOwner;
+        private System.Windows.Forms.Label label49;
     }
 }

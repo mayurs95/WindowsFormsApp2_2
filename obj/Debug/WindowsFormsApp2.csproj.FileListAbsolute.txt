@@ -34,3 +34,17 @@ D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cach
 D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
 D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.exe
 D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.pdb
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\Newtonsoft.Json.dll
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\OpenAI_API.dll
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\System.Management.Automation.dll
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\Microsoft.Management.Infrastructure.dll
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\Newtonsoft.Json.xml
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\OpenAI_API.xml
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\System.Management.Automation.xml
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ScorVigo Tech Pvt Ltd\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\ScorVigo Tech Pvt Ltd\obj\Debug\WindowsFormsApp2.csproj.CopyComplete

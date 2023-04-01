@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -214,6 +215,84 @@ namespace WindowsFormsApp2
             txtallergies.Text = "";
             txt_doctor.Text = "";
 
+        }
+
+        private void btn_save_wholesaler_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=DESKTOP-R9V99R0;Initial Catalog=MediVortex;Integrated Security=True";
+
+            // Verify PAN number format
+            string panNumberRegex = @"[A-Z]{5}[0-9]{4}[A-Z]{1}";
+            if (!Regex.IsMatch(txtWholesalerPanNumber.Text, panNumberRegex))
+            {
+                MessageBox.Show("Invalid PAN number format. Please enter a valid PAN number.");
+                return;
+            }
+
+            // Verify GSTIN format
+            string gstinRegex = @"[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Za-z]{1}[Z]{1}[0-9A-Za-z]{1}";
+            if (!Regex.IsMatch(txtWholesalerGstin.Text, gstinRegex))
+            {
+                MessageBox.Show("Invalid GSTIN format. Please enter a valid GSTIN.");
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Open the database connection
+                    connection.Open();
+
+                    // Create the SQL query to insert the data
+                    string sqlQuery = "INSERT INTO Wholesalers (BusinessOwner, BusinessName, ContactNum, EmailId, WholesalerAddress, WholesalerPanNumber, WholesalerGstin) " +
+                                      "VALUES (@BusinessOwner, @BusinessName, @ContactNum, @EmailId, @WholesalerAddress, @WholesalerPanNumber, @WholesalerGstin)";
+
+                    using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+                    {
+                        // Add the parameters to the command
+                        command.Parameters.AddWithValue("@BusinessOwner", txtBusinessOwner.Text);
+                        command.Parameters.AddWithValue("@BusinessName", txtBusinessName.Text);
+                        command.Parameters.AddWithValue("@ContactNum", txtContactNum.Text);
+                        command.Parameters.AddWithValue("@EmailId", txtEmailId.Text);
+                        command.Parameters.AddWithValue("@WholesalerAddress", txtWholesalerAddress.Text);
+                        command.Parameters.AddWithValue("@WholesalerPanNumber", txtWholesalerPanNumber.Text);
+                        command.Parameters.AddWithValue("@WholesalerGstin", txtWholesalerGstin.Text);
+
+                        // Execute the command
+                        command.ExecuteNonQuery();
+                    }
+
+                    // Close the database connection
+                    connection.Close();
+
+                    // Show success message
+                    MessageBox.Show("Registration Done, Data Saved Successfully");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Show error message
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void btn_wholesaler_clear_Click(object sender, EventArgs e)
+        {
+            txtBusinessOwner.Text = "";
+            txtBusinessName.Text = "";
+            txtContactNum.Text = "";
+            txtEmailId.Text = "";
+            txtWholesalerAddress.Text = "";
+            txtWholesalerPanNumber.Text = "";
+            txtWholesalerGstin.Text = "";
+        }
+
+        private void btn_wholesaler_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
         }
     }
 }

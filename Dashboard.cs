@@ -18,6 +18,8 @@ namespace WindowsFormsApp2
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized; // set the WindowState property to Maximized
 
+
+
         }
 
 
