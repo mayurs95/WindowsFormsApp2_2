@@ -171,6 +171,52 @@ namespace WindowsFormsApp2
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
         }
+
+        private void btn_display_Wholesalers_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Open the database connection
+                using (SqlConnection conn = new SqlConnection("Data Source=DESKTOP-R9V99R0;Initial Catalog=MediVortex;Integrated Security=True"))
+                {
+                    conn.Open();
+
+                    // Create a SELECT query to retrieve all rows from the Wholesalers table
+                    string query = "SELECT * FROM Wholesalers";
+
+                    // Create a SqlDataAdapter and DataTable to store the results of the query
+                    SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                    DataTable dt = new DataTable();
+
+                    // Fill the DataTable with the results of the query
+                    da.Fill(dt);
+
+                    // Calculate the number of rows to display based on the number of records in the DataTable
+                    int numRows = dt.Rows.Count;
+
+                    // Set the RowCount property of the DataGridView to display the correct number of rows
+                    DGV_Wholesalers.RowCount = numRows;
+
+                    // Loop through the DataGridView rows and add empty rows to fill the remaining space
+                    for (int i = numRows; i < DGV_Wholesalers.Rows.Count; i++)
+                    {
+                        DGV_Wholesalers.Rows[i].Visible = false;
+                    }
+
+
+
+                    // Display the DataTable in a DataGridView on the WholesalerPanel
+                    DGV_Wholesalers.DataSource = dt;
+                  
+                    DGV_Wholesalers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
     
 }

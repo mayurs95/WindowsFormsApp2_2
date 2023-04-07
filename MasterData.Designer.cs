@@ -45,30 +45,42 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btn_back_allpatients = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_display_AllPatients = new System.Windows.Forms.Button();
             this.alldoctors = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btn_display_dgvAllDrugs = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView_AllDrugs = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView_AllDrugs = new System.Windows.Forms.DataGridView();
             this.medicineStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mediVortexDataSet = new WindowsFormsApp2.MediVortexDataSet();
             this.medicineStockTableAdapter = new WindowsFormsApp2.MediVortexDataSetTableAdapters.MedicineStockTableAdapter();
-            this.btn_display_dgvAllDrugs = new System.Windows.Forms.Button();
-            this.btn_display_AllPatients = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_back_allpatients = new System.Windows.Forms.Button();
+            this.WholesalerPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_display_Wholesalers = new System.Windows.Forms.Button();
+            this.DGV_Wholesalers = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.alldoctors.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AllDrugs)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.medicineStockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mediVortexDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.WholesalerPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Wholesalers)).BeginInit();
             this.SuspendLayout();
             // 
             // fileToolStripMenuItem
@@ -200,6 +212,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.panel3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -221,8 +234,40 @@
             this.tabPage3.Text = "All Patient\'s";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btn_back_allpatients
+            // 
+            this.btn_back_allpatients.Location = new System.Drawing.Point(1288, 3);
+            this.btn_back_allpatients.Name = "btn_back_allpatients";
+            this.btn_back_allpatients.Size = new System.Drawing.Size(75, 23);
+            this.btn_back_allpatients.TabIndex = 2;
+            this.btn_back_allpatients.Text = "Back";
+            this.btn_back_allpatients.UseVisualStyleBackColor = true;
+            this.btn_back_allpatients.Click += new System.EventHandler(this.btn_back_allpatients_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 37);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1363, 619);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // btn_display_AllPatients
+            // 
+            this.btn_display_AllPatients.Location = new System.Drawing.Point(7, 7);
+            this.btn_display_AllPatients.Name = "btn_display_AllPatients";
+            this.btn_display_AllPatients.Size = new System.Drawing.Size(75, 23);
+            this.btn_display_AllPatients.TabIndex = 0;
+            this.btn_display_AllPatients.Text = "Display";
+            this.btn_display_AllPatients.UseVisualStyleBackColor = true;
+            this.btn_display_AllPatients.Click += new System.EventHandler(this.btn_display_AllPatients_Click);
+            // 
             // alldoctors
             // 
+            this.alldoctors.Controls.Add(this.panel1);
             this.alldoctors.Location = new System.Drawing.Point(4, 22);
             this.alldoctors.Name = "alldoctors";
             this.alldoctors.Padding = new System.Windows.Forms.Padding(3);
@@ -244,35 +289,15 @@
             this.tabPage5.Text = "All Drug\'s";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
+            // btn_display_dgvAllDrugs
             // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1366, 609);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "All Drug\'s";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.btn_back);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1366, 609);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "All Content";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1366, 609);
-            this.tabPage4.TabIndex = 7;
-            this.tabPage4.Text = "All Hospital\'s";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.btn_display_dgvAllDrugs.Location = new System.Drawing.Point(6, 3);
+            this.btn_display_dgvAllDrugs.Name = "btn_display_dgvAllDrugs";
+            this.btn_display_dgvAllDrugs.Size = new System.Drawing.Size(75, 23);
+            this.btn_display_dgvAllDrugs.TabIndex = 2;
+            this.btn_display_dgvAllDrugs.Text = "Display";
+            this.btn_display_dgvAllDrugs.UseVisualStyleBackColor = true;
+            this.btn_display_dgvAllDrugs.Click += new System.EventHandler(this.btn_display_dgvAllDrugs_Click);
             // 
             // button1
             // 
@@ -294,6 +319,38 @@
             this.dataGridView_AllDrugs.TabIndex = 1;
             this.dataGridView_AllDrugs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_AllDrugs_CellContentClick);
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.WholesalerPanel);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1366, 609);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "All Wholesaler\'s";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.btn_back);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1366, 609);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "All Content";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1366, 609);
+            this.tabPage4.TabIndex = 7;
+            this.tabPage4.Text = "All Hospital\'s";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // medicineStockBindingSource
             // 
             this.medicineStockBindingSource.DataMember = "MedicineStock";
@@ -308,46 +365,58 @@
             // 
             this.medicineStockTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_display_dgvAllDrugs
+            // WholesalerPanel
             // 
-            this.btn_display_dgvAllDrugs.Location = new System.Drawing.Point(6, 3);
-            this.btn_display_dgvAllDrugs.Name = "btn_display_dgvAllDrugs";
-            this.btn_display_dgvAllDrugs.Size = new System.Drawing.Size(75, 23);
-            this.btn_display_dgvAllDrugs.TabIndex = 2;
-            this.btn_display_dgvAllDrugs.Text = "Display";
-            this.btn_display_dgvAllDrugs.UseVisualStyleBackColor = true;
-            this.btn_display_dgvAllDrugs.Click += new System.EventHandler(this.btn_display_dgvAllDrugs_Click);
+            this.WholesalerPanel.BackColor = System.Drawing.Color.AliceBlue;
+            this.WholesalerPanel.Controls.Add(this.DGV_Wholesalers);
+            this.WholesalerPanel.Controls.Add(this.btn_display_Wholesalers);
+            this.WholesalerPanel.Location = new System.Drawing.Point(0, 2);
+            this.WholesalerPanel.Name = "WholesalerPanel";
+            this.WholesalerPanel.Size = new System.Drawing.Size(1366, 604);
+            this.WholesalerPanel.TabIndex = 9;
             // 
-            // btn_display_AllPatients
+            // panel1
             // 
-            this.btn_display_AllPatients.Location = new System.Drawing.Point(7, 7);
-            this.btn_display_AllPatients.Name = "btn_display_AllPatients";
-            this.btn_display_AllPatients.Size = new System.Drawing.Size(75, 23);
-            this.btn_display_AllPatients.TabIndex = 0;
-            this.btn_display_AllPatients.Text = "Display";
-            this.btn_display_AllPatients.UseVisualStyleBackColor = true;
-            this.btn_display_AllPatients.Click += new System.EventHandler(this.btn_display_AllPatients_Click);
+            this.panel1.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1366, 604);
+            this.panel1.TabIndex = 10;
             // 
-            // dataGridView1
+            // panel3
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 37);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1363, 619);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.panel3.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel3.Location = new System.Drawing.Point(0, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1366, 604);
+            this.panel3.TabIndex = 10;
             // 
-            // btn_back_allpatients
+            // panel4
             // 
-            this.btn_back_allpatients.Location = new System.Drawing.Point(1288, 3);
-            this.btn_back_allpatients.Name = "btn_back_allpatients";
-            this.btn_back_allpatients.Size = new System.Drawing.Size(75, 23);
-            this.btn_back_allpatients.TabIndex = 2;
-            this.btn_back_allpatients.Text = "Back";
-            this.btn_back_allpatients.UseVisualStyleBackColor = true;
-            this.btn_back_allpatients.Click += new System.EventHandler(this.btn_back_allpatients_Click);
+            this.panel4.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel4.Location = new System.Drawing.Point(0, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1366, 604);
+            this.panel4.TabIndex = 10;
+            // 
+            // btn_display_Wholesalers
+            // 
+            this.btn_display_Wholesalers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_display_Wholesalers.Location = new System.Drawing.Point(6, 20);
+            this.btn_display_Wholesalers.Name = "btn_display_Wholesalers";
+            this.btn_display_Wholesalers.Size = new System.Drawing.Size(75, 23);
+            this.btn_display_Wholesalers.TabIndex = 0;
+            this.btn_display_Wholesalers.Text = "Display";
+            this.btn_display_Wholesalers.UseVisualStyleBackColor = true;
+            this.btn_display_Wholesalers.Click += new System.EventHandler(this.btn_display_Wholesalers_Click);
+            // 
+            // DGV_Wholesalers
+            // 
+            this.DGV_Wholesalers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Wholesalers.Location = new System.Drawing.Point(0, 50);
+            this.DGV_Wholesalers.Name = "DGV_Wholesalers";
+            this.DGV_Wholesalers.Size = new System.Drawing.Size(1374, 595);
+            this.DGV_Wholesalers.TabIndex = 1;
             // 
             // MasterData
             // 
@@ -366,13 +435,19 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.alldoctors.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AllDrugs)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.medicineStockBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mediVortexDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.WholesalerPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Wholesalers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,5 +485,11 @@
         private System.Windows.Forms.Button btn_back_allpatients;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_display_AllPatients;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel WholesalerPanel;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btn_display_Wholesalers;
+        private System.Windows.Forms.DataGridView DGV_Wholesalers;
     }
 }

@@ -294,5 +294,56 @@ namespace WindowsFormsApp2
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
         }
+
+        private void btn_back_patient_registration_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+        }
+
+        private void btn_save_doctor_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=DESKTOP-R9V99R0;Initial Catalog=MediVortex;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = "INSERT INTO AllDoctor (Hospital, DoctorName, Speciality, Email, Address, Contact) VALUES (@Hospital, @DoctorName, @Speciality, @Email, @Address, @Contact)";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Hospital", txtHospital_Doctor.Text);
+            command.Parameters.AddWithValue("@DoctorName", txtDoctorname_Doctor.Text);
+            command.Parameters.AddWithValue("@Speciality", txtSpeciality_Doctor.Text);
+            command.Parameters.AddWithValue("@Email", txtEmail_Doctor.Text);
+            command.Parameters.AddWithValue("@Address", txtAddress_Doctor.Text);
+            command.Parameters.AddWithValue("@Contact", txt_Contact_Doctor.Text);
+
+            try
+            {
+                command.ExecuteNonQuery();
+                MessageBox.Show("Data saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            connection.Close();
+        }
+
+        private void btn_clear_doctor_Click(object sender, EventArgs e)
+        {
+            txtHospital_Doctor.Text = "";
+            txtDoctorname_Doctor.Text = "";
+            txtSpeciality_Doctor.Text = "";
+            txtEmail_Doctor.Text = "";
+            txtAddress_Doctor.Text = "";
+            txt_Contact_Doctor.Text = "";
+        }
+
+        private void btn_back_doctor_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+        }
     }
 }
